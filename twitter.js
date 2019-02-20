@@ -1,5 +1,5 @@
 let twittBtn = document.getElementById('submitBtn');
-twittBtn.addEventListener('click', submitTweet,true);
+twittBtn.addEventListener('click', submitTweet, true);
 
 function submitTweet(){
   let tweet = getFormData();  
@@ -36,6 +36,40 @@ function insertAuthorName(name){
 
   return newName;
 }
+
+let messageInput = document.getElementById('message');
+messageInput.addEventListener('keyup',watchMessage, true);
+
+function watchMessage(){
+  updateCounter();
+  toggleButton();
+}
+
+function updateCounter(){
+  let maxChar = 140;
+  let counter = document.getElementById('counter');
+  let message = document.getElementById('message').value;
+
+  // if(message.length!==0){
+    counter.innerHTML = maxChar - message.length;
+
+  // }
+
+}
+
+function toggleButton(){
+  let button = document.getElementById('submitBtn');
+  let message = document.getElementById('message').value;
+
+  if (message.length = 0) {
+    button.disabled = true;
+  } else if(message.length>0 && message.length<=140){
+    button.disabled = false;
+  } else if (message.length>140) {
+    button.disabled = true;
+  }
+}
+
 
 
 
