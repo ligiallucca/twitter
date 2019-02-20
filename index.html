@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twitter</title>
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro:400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="main-title">Gratitwitter</h1>
+            <p class="explanation">Uma pausa no seu dia para lembrar a gratidão sobre as pequenas (ou grandes) coisas.</p>
+        </header>
+        <section class="form-section">
+            <div class="container">
+                <form class="form" id="twitter-form">
+                    <fieldset>
+                        <legend>Postar uma nova mensagem</legend>
+                        
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" class="text-box" id="message" placeholder="Pelo que irá agradecer hoje?" autofocus required></textarea>
+                                                
+                        <label for="name">Escrita por: </label>
+                        <input type="text" name="name" class="text-box" id="name" required>
+                        
+                        <button type="button" name="button" form="twitter-form" class="submit-btn" id="submitBtn">
+                                Enviar
+                        </button>
+                    </fieldset>
+                </form>              
+                <ul class="show-content" id="messageList"></ul> 
+            </div>           
+        </section>
+    </main>
+    <script src="twitter.js"></script>
+</body>
+</html>
