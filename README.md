@@ -51,6 +51,16 @@ O requerimento dessa versão era a mudança de cor conforme os caracteres fossem
 
 ![tela do desenvolvimento versão 0.0.3](readme-images/telaversao003.png)
 
+## Execução da Versão 0.0.4
+
+O requisito da versão 0.0.4 era que ao pressionar enter aumente a área de texto de acordo com o tamanho do texto.
+
+Para isso foi adicionado com "content.replace" à função "insertNewMessage"
+
+![tela do desenvolvimento versão 0.0.4](readme-images/telaversao004.png)
+
+
+
 
 
 

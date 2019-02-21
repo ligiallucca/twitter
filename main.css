@@ -44,10 +44,6 @@ fieldset{
     align-items: flex-start;
 }
 
-.show-content{
-    
-}
-
 .text-box {
     width: 100%;
     margin-bottom: 14px;
@@ -69,6 +65,11 @@ label {
     margin-bottom: 10px;
     width: 100%;
     }
+
+.tweet-list-item{
+    list-style: none;
+    margin-bottom: 24px;
+}
 
 .submit-btn{
     display: block;

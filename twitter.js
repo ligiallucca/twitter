@@ -4,7 +4,8 @@ twittBtn.addEventListener('click', submitTweet, true);
 function submitTweet(){
   let tweet = getFormData();  
   createListItem( insertNewMessage(tweet.message) , insertAuthorName(tweet.name) );
-}
+  clearForm();
+  }
 
 function getFormData(){
   let form = document.getElementById('twitter-form');
@@ -18,6 +19,7 @@ function getFormData(){
 function createListItem(message,name){
   const list = document.getElementById('messageList');
   const newLi = document.createElement('li'); 
+  newLi.classList.add('tweet-list-item');
   newLi.appendChild(message);
   newLi.appendChild(name);
   list.appendChild(newLi);
@@ -25,7 +27,7 @@ function createListItem(message,name){
 
 function insertNewMessage(content){
   let newMessage = document.createElement('q');
-  newMessage.textContent = content;
+  newMessage.innerHTML = content.replace(/\n/g,'<br>');
 
   return newMessage;
 }
@@ -76,7 +78,12 @@ function toggleButton(){
   }
 }
 
-
+function clearForm() {
+  // seleciona o elemento <form></form>
+  const form = document.getElementById('twitter-form');
+  // limpa formulario
+  form.reset();
+}
 
 
 
