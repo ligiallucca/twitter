@@ -49,11 +49,17 @@ function updateCounter(){
   let maxChar = 140;
   let counter = document.getElementById('counter');
   let message = document.getElementById('message').value;
+  let remaining =  maxChar - message.length;
 
-  // if(message.length!==0){
-    counter.innerHTML = maxChar - message.length;
+  counter.innerHTML = remaining;
 
-  // }
+  if(remaining>=20){
+    counter.style.color = '#4169E1'
+  } else if(remaining>=10){
+    counter.style.color = '#FFFF00'
+  } else {
+    counter.style.color = '#FF0000'
+  }
 
 }
 

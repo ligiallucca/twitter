@@ -45,6 +45,13 @@ Visualmente, a tela passou a ser assim:
 
 ![tela do desenvolvimento versão 0.0.2](readme-images/telaversao002.png)
 
+## Execução da Versão 0.0.3
+
+O requerimento dessa versão era a mudança de cor conforme os caracteres fossem terminando, para isso foram criadas condicionais dentro da própria função do contador que mudassem as cores de acordo com o decremento dos caracteres. Ao chegar a 20 caracteres restantes, a cor do contador passa a ser amarela e a 10, vermelha. A seguir, uma imagem para ilustrar:
+
+![tela do desenvolvimento versão 0.0.3](readme-images/telaversao003.png)
+
+
 
 
 
